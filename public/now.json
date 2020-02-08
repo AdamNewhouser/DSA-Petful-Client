@@ -1,28 +1,9 @@
 {
     "version": 2,
-    "name": "CLIENT_PROJECT_NAME",
-    "alias": "CLIENT_PROJECT_NAME",
+    "alias": "petful-client",
+    "name": "petful",
     "routes": [
-      {
-        "src": "^/static/(.*)",
-        "dest": "/static/$1"
-      },
-      {
-        "src": "^/favicon.ico$",
-        "dest": "/favicon.ico"
-      },
-      {
-        "src": "^/manifest.json$",
-        "dest": "/manifest.json"
-      },
-      {
-        "src": "^/site.webmanifest.json$",
-        "dest": "/site.webmanifest.json"
-      },
-      {
-        "src": ".*",
-        "dest": "/index.html"
-      },
+        { "handle": "filesystem" },
+        { "src": "/.*", "dest": "/index.html" }
     ]
-   }
-   
+  }
