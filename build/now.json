@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "alias": "adam-petful-client",
+    "alias": "adams-petful-client",
     "name": "petful",
     "routes": [
         { "handle": "filesystem" },
