@@ -1,0 +1,52 @@
+.pets-page-header {
+    color:  #27798C;
+    text-align:center;
+  
+  }
+  
+  .pets-page > div > h3{
+    color: #9AD9A3;
+    text-align: center;
+    font-size: 1.3rem;
+  } 
+  
+  .pets-page {
+    width:80%;
+    margin-left:auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .animal-names {
+    color: #104D73;
+    font-weight: bolder;
+    margin: 10px;
+    font-size: 1.3rem;
+  }
+  
+  .next-animals {
+    text-align:center;
+  }
+  .next-button {
+    height: 40px;
+    background-color: transparent;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  
+  .next-button:hover {
+    background-color: #E0E2F2;
+  }
+  
+  @media only screen and (min-width: 550px) {
+    .pets-page {
+      display:flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    .pets-page > div{
+      margin: 2px;
+    }
+  }

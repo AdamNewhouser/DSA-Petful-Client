@@ -1,0 +1,91 @@
+.adopt-now-page{
+    width: 80%;
+    margin-left:auto;
+    margin-right: auto;
+  }
+  
+  .adopt-now-page > h2 {
+    text-align: center;
+    color: darkviolet
+  }
+  
+  .adoption-options {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .adoption-options > div > h3 {
+    color: pink;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  
+  .adoption-options > div > ul {
+    list-style:none;
+    padding:0px;
+  }
+  
+  .pet-details {
+    color:  #104D73;
+    font-weight:bolder;
+    margin-right: 5px;
+  }
+  
+  ol {
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 50px;
+    border: 1px solid lightgrey;
+    height: 200px;
+    overflow:auto;
+    padding-top: 10px;
+  }
+  
+  form {
+    text-align:center;
+  }
+  
+  .join-queue-button{
+    height: 40px;
+    margin-top: 5px;
+    background-color:transparent;
+    font-size: 0.8rem;
+  }
+  
+  .join-queue-button:hover {
+    background-color: #E0E2F2;
+  }
+  
+  .adopt-buttons{
+    display:flex;
+    justify-content: space-evenly;
+  }
+  .adopt-buttons > button {
+    height: 40px;
+    font-size:0.8rem;
+    margin: 10px;
+    background-color:transparent;
+  }
+  
+  .adopt-buttons > button:hover {
+    background-color: #E0E2F2;
+  }
+  
+  @media only screen and (min-width: 550px) {
+    .adoption-options {
+      display:flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    .adoption-options > div{
+      margin: 2px;
+    }
+  }
+  
+  @media only screen and (min-width: 800px){
+  ol {
+    width: 40%;
+  }
+  }

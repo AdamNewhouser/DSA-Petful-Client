@@ -1,0 +1,39 @@
+.success-page {
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+  }
+  
+  .success-page > h2 {
+    color:#27798C
+  }
+  
+  .adoption-details{
+    font-size: 1.1rem;
+    width: 50%;
+    margin-left:auto;
+    margin-right:auto;
+    height: 100px;
+  }
+  
+  .adopted-info > div {
+    width: 350px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+  @media only screen and (min-width: 675px) {
+    .success-page {
+      width: 100%;
+    }
+    .adopted-info{
+      display:flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap:wrap;
+    }
+    .adopted-info > div {
+      margin: 2px;
+    }
+  }
