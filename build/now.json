@@ -1,7 +1,6 @@
 {
     "version": 2,
-    "alias": "adams-petful-client",
-    "name": "petful",
+    "name": "adam-petful",
     "routes": [
         { "handle": "filesystem" },
         { "src": "/.*", "dest": "/index.html" }
