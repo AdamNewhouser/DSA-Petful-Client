@@ -19,7 +19,8 @@ class App extends Component {
     let url = config.API_ENDPOINT
     fetch(url + 'successes', {
       method: 'GET',
-      headers: { 'content-type': 'application/json' }
+      headers: { 'content-type': 'application/json' },
+      mode: 'cors'
     })
       .then(res => {
         if(!res.ok) {
@@ -38,7 +39,8 @@ class App extends Component {
     let url = config.API_ENDPOINT
     fetch(url + 'users', {
       method: 'GET',
-      headers: { 'content-type': 'application/json' }
+      headers: { 'content-type': 'application/json' },
+      mode: 'cors'
     })
       .then(res => {
         if(!res.ok) {
@@ -58,7 +60,8 @@ class App extends Component {
     let url = config.API_ENDPOINT
     fetch(url + 'cats', {
       method: 'GET',
-      headers: { 'content-type': 'application/json' }
+      headers: { 'content-type': 'application/json' },
+      mode: 'cors'
     })
       .then(res => {
         if (!res.ok) {
@@ -77,7 +80,8 @@ class App extends Component {
     let url = config.API_ENDPOINT
     fetch(url + 'dogs', {
       method: 'GET',
-      headers: { 'content-type': 'application/json' }
+      headers: { 'content-type': 'application/json' },
+      mode: 'cors'
     })
       .then(res => {
         if (!res.ok) {
@@ -97,7 +101,8 @@ class App extends Component {
     let url = config.API_ENDPOINT
     fetch(url + 'cats', {
       method: 'DELETE',
-      headers: { 'content-type': 'application/json' }
+      headers: { 'content-type': 'application/json' },
+      mode: 'cors'
   })
     .then(res => {
       if (!res.ok) {
@@ -118,7 +123,8 @@ class App extends Component {
     let url = config.API_ENDPOINT
     fetch(url + 'dogs', {
       method: 'DELETE',
-      headers: { 'content-type': 'application/json' }
+      headers: { 'content-type': 'application/json' },
+      mode: 'cors'
   })
     .then(res => {
       if (!res.ok) {
@@ -140,6 +146,7 @@ class App extends Component {
     fetch(url + 'users', {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
+      mode: 'cors',
       body: JSON.stringify(input)
   })
     .then(res => {
@@ -161,7 +168,8 @@ class App extends Component {
     let url = config.API_ENDPOINT
     fetch(url + 'users', {
       method: 'DELETE',
-      headers: { 'content-type': 'application/json' }
+      headers: { 'content-type': 'application/json' },
+      mode: 'cors'
   })
     .then(res => {
       if (!res.ok) {
